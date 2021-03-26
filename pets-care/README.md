@@ -1,6 +1,6 @@
 # pets-care
 
-#How to create a vuejs project via vue CLI
+# How to create a vuejs project via vue CLI
 
 vue create <project-name >
 
