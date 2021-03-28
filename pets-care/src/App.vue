@@ -1,28 +1,54 @@
 <template>
-  <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-toolbar app>
+      <v-toolbar-title class="headline text-uppercase">
+        <span>HAPPY PETS CARE</span>&nbsp;
+        <!-- <span class="font-weight-light">USER APPLICATION</span> -->
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+    </v-toolbar>
+
+    <div class="side-bar-menu">
+      <Sidebar />
+      <div class="content">
+        <v-content>
+          <!-- It will load the pages according to the routers set in the routers.js file -->
+          <router-view></router-view>
+        </v-content>
+      </div>
+    </div>
+
+    <!-- <v-content>
+      <router-view></router-view>
+    </v-content> -->
+
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import CallAPI from "./components/CallApi";
+// import CallAPI from "./components/User/Users.vue";
+import Sidebar from "./components/menu/Sidebar.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    Sidebar
+  },
+  data() {
+    return {
+      //
+    };
   }
-}
+};
 </script>
 
 <style>
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
+.side-bar-menu {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
 </style>

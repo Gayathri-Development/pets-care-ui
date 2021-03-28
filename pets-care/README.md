@@ -1,8 +1,4 @@
-# pets-care
-
-# How to create a vuejs project via vue CLI
-
-vue create <project-name >
+# express-cors-demo
 
 ## Project setup
 ```
@@ -17,6 +13,11 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
+```
+
+### Run your tests
+```
+npm run test
 ```
 
 ### Lints and fixes files
