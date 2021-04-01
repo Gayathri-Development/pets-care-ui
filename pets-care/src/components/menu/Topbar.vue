@@ -1,62 +1,60 @@
 <template>
-  <div class="topnav">
-    <div class="menu-left">
-      <router-link :to="{name:'home'}" exact>Home</router-link>
-      <router-link :to="{name:'article1'}">Article 1</router-link>
-      <router-link :to="{name:'article2'}">Article 2</router-link>
-    </div>
-
-    <div class="menu-right">
-      <a href="#" @click.prevent="toggleNav">Toggle Nav</a>
-      <a href="#" @click.prevent="toggleAside">Toggle Aside</a>
+  <div >
+    <div class="navbar">
+      <!-- <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+      <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+      <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>  -->
+      <a href="#"><i class="fa fa-fw fa-user" style="font-size: 1.5rem;"></i></a>
     </div>
   </div>
 </template>
 
 <script>
+
   export default {
     name: 'top-bar',
-    methods: {
-      toggleNav () {
-        this.$eventHub.$emit('toggle-nav')
-      },
-      toggleAside () {
-        this.$eventHub.$emit('toggle-aside')
-      }
-    }
+    // methods: {
+    //   toggleNav () {
+    //     this.$eventHub.$emit('toggle-nav')
+    //   },
+    //   toggleAside () {
+    //     this.$eventHub.$emit('toggle-aside')
+    //   }
+    // }
   }
 </script>
+
 <style scoped>
-  /* Add a black background color to the top navigation */
-  .topnav {
-    background-color: inherit;
-    overflow: hidden;
-    display: flex;
-  }
-  .topnav .menu-right {
-    margin-left: auto;
-  }
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
+  body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  /* height: 100px; */
+  /* background-color: #555; */
+  background-color: gray;
+  overflow: auto;
+}
+
+.navbar a {
+  float: right;
+  padding: 40px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
     display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 14px;
-    border-radius: 0.25em;
-    margin-right: .25rem;
-    font-weight: bold;
   }
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
+}
 </style>

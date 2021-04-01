@@ -1,4 +1,4 @@
-# express-cors-demo
+# pets-care
 
 ## Project setup
 ```

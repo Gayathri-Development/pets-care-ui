@@ -3,7 +3,7 @@
     <!-- <div class="title">Simple Sidebar</div> -->
     <div class="menu-items">
       <router-link to="/" active-class="active" tag="button" exact class="side-btn">
-        <div class="link-container">Overview</div>
+        <div class="link-container">Home</div>
       </router-link>
       <router-link to="/Users" active-class="active" tag="button" exact class="side-btn">
         <div class="link-container">Pets Owners</div>
