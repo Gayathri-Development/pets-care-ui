@@ -10,6 +10,9 @@ import UserList from './components/User/Users.vue';
 import UserCreate from './components/User/UserCreate.vue';
 import UserUpdate from './components/User/UserUpdate.vue';
 import petsProfile from './components/pets/petsRead.vue';
+import petsCreate from './components/pets/petsCreate.vue';
+import petsList from './components/pets/pets.vue';
+// import petsDelete from './components/pets/petsRead.vue';
 
 export default new VueRouter({ 
   routes: [
@@ -34,9 +37,19 @@ export default new VueRouter({
       component: UserList,
     },
     {
+      name: `Pets`,
+      path: `/Pets`,
+      component: petsList,
+    },
+    {
       name: `readPets`,
       path: `/Pets/Profiles`,
       component: petsProfile,
+    },
+    {
+      name: `createPets`,
+      path: `/Pets/Create`,
+      component: petsCreate,
     },
   ],
   mode: `history`,

@@ -11,15 +11,21 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
     "debug": "^4.1.1",
     "express": "^4.16.4",
+    "jquery": "^3.6.0",
     "lodash.orderby": "^4.6.0",
+    "module": "^1.2.5",
     "morgan": "^1.9.1",
     "v-datatable-light": "^0.8.2",
-    "vue": "^2.6.6",
+    "vue": "^2.6.12",
     "vue-router": "^3.4.9",
+    "vue-simple-alert": "^1.1.1",
     "vue-simple-spinner": "^1.2.10",
-    "vuetify": "^1.5.5"
+    "vuetify": "^1.5.5",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.0",

@@ -11,8 +11,11 @@
         <router-link to="/" active-class="active" tag="button" exact class="side-btn">
           <div class="link-container" style="font-size: 3rem;"><i class="fa fa-fw fa-home"></i></div>
         </router-link>
-        <router-link to="/Users" active-class="active" tag="button" exact class="side-btn">
+        <router-link to="/Pets/Create" active-class="active" tag="button" exact class="side-btn">
           <div class="link-container" style="font-size: 3rem;"><i class="fa fa-user" aria-hidden="true"></i></div>
+        </router-link>
+        <router-link to="/Pets" active-class="active" tag="button" exact class="side-btn">
+          <div class="link-container" style="font-size: 3rem;"><i class="fa fa-paw" aria-hidden="true"></i></div>
         </router-link>
         <router-link to="/User/Create" active-class="active" tag="button" exact class="side-btn">
           <div class="link-container" style="font-size: 3rem;"><i class="fa fa-user-md"></i></div>
@@ -20,13 +23,13 @@
         <router-link to="/User/Edit" active-class="active" tag="button" exact class="side-btn">
           <div class="link-container" style="font-size: 3rem;"><i class="fa fa-shopping-basket" aria-hidden="true"></i></div>
         </router-link>
-        <router-link to="/Pets/Profiles" active-class="active" tag="button" exact class="side-btn">
+        <router-link to="#" active-class="active" tag="button" exact class="side-btn">
           <div class="link-container" style="font-size: 3rem;"><i class='fas fa-drumstick-bite'></i></div>
         </router-link>
         <!-- <router-link to="/User/Edit" active-class="active" tag="button" exact class="side-btn">
           <div class="link-container" style="font-size: 3rem;">Pets Grooming</div>
         </router-link> -->
-        <router-link to="/Pets/Profiles" active-class="active" tag="button" exact class="side-btn">
+        <router-link to="#" active-class="active" tag="button" exact class="side-btn">
           <div class="link-container" style="font-size: 3rem;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
         </router-link>
     </div>
@@ -89,7 +92,7 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
-  color: black;
+  color: teal;
   background-color: transparent;
 }
 .side-btn:focus {
@@ -98,7 +101,7 @@
 .side-btn.active {
   position: relative;
   background-color: white;
-  color: teal;
+  color: blue;
   font-weight: 600;
   margin-left: 10px;
   border-radius: 30px 0 0 30px;

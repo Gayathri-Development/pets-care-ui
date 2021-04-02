@@ -4,12 +4,10 @@
       <v-flex xs12>
         <!-- <v-alert type="warning" class="mb-3" :value="apiError" outline>There was an error calling the API</v-alert> -->
 
-        <h1>Create New User</h1>
-
-        <br />
+        <h1>Add Pet Details</h1>
         <br />
         <div class="form-group">
-          <label for="name">Enter Your Name</label>&nbsp;&nbsp;
+          <label for="petName"><b>Pet Name</b></label>&nbsp;&nbsp;
           <br />
           <input type="text" id="name" class="form-control" v-model="userData.name" />
         </div>
