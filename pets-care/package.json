@@ -10,6 +10,8 @@
     "dev": "npm-run-all --parallel serve start-server-dev"
   },
   "dependencies": {
+    "@kouts/vue-modal": "^2.0.1",
+    "@linusborg/vue-simple-portal": "^0.1.5",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
@@ -21,6 +23,7 @@
     "morgan": "^1.9.1",
     "v-datatable-light": "^0.8.2",
     "vue": "^2.6.12",
+    "vue-form-wizard": "^0.8.4",
     "vue-router": "^3.4.9",
     "vue-simple-alert": "^1.1.1",
     "vue-simple-spinner": "^1.2.10",

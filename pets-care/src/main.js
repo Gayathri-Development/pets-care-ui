@@ -12,6 +12,18 @@ import VueSimpleAlert from "vue-simple-alert";
 Vue.use(VueSimpleAlert);
 // Vue alerts ends
 
+// Vue modal
+import VueModal from '@kouts/vue-modal';
+import '@kouts/vue-modal/dist/vue-modal.css';
+Vue.use(VueModal);
+// Vue modals ends
+
+// Vue step wizard starts
+import VueFormWizard from 'vue-form-wizard'
+import 'vue-form-wizard/dist/vue-form-wizard.min.css'
+Vue.use(VueFormWizard)
+// Vue step wizard ends
+
 import router from './router.js';
 import App from './App.vue'
 

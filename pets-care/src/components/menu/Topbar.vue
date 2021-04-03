@@ -24,6 +24,7 @@
 			<a href="#" class="nav-item nav-link"><i class="fa fa-star"></i><span>FeedBack</span></a>
 			<a href="#" class="nav-item nav-link"><i class="fa fa-envelope"></i><span>Messages</span></a>		
 			<a href="#" class="nav-item nav-link"><i class="fa fa-bell"></i><span>Notifications</span></a>
+				
 			<div class="nav-item dropdown">
 				<a href="/Pets/Profiles" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12213218/German-Shepherd-on-White-00.jpg" class="avatar" alt="Avatar"><b class="caret"></b></a>
 				<div class="dropdown-menu">

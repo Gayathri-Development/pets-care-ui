@@ -24,7 +24,7 @@
         </div> -->
         <h2>Pets Info</h2>
         <div>
-            <router-link to="#" tag="button" style="padding: 5px 10px 5px 850px;">
+            <router-link to="/Pets/Add" tag="button" style="padding: 5px 10px 5px 850px;">
             <!-- <div class="link-container" style="font-size: 3rem;"><i class="fa fa-fw fa-home"></i></div> -->
                 <div>
                     <i class="fa fa-plus-circle" aria-hidden="true" title="Add Pets" style="color: green;cursor: pointer;font-size: 1.5rem;"></i>
@@ -36,12 +36,29 @@
             <b-row>
                 <b-col>
                     <b-table ref="table" stacked="md" :items="posts" :fields="fields" class="table-style">
-                    <!-- <template slot="petName" slot-scope="posts">
-                        {{posts.petName}}
-                    </template> -->
+                  
+                    <template v-slot:cell(petProfile)="posts">
+                      <div>
+                        <img v-bind:src="posts.item.petProfile" width="60" height="60"/>
+                      </div>  
+                      <!-- {{posts.item.petProfile}} -->
+                    </template>
+
+                    <template v-slot:cell(petName)="posts">
+                      {{posts.item.petName}}
+                    </template>
+
+                    <template v-slot:cell(petType)="posts">
+                      {{posts.item.petType}}
+                    </template>
+
+                    <template v-slot:cell(petFamily)="posts">
+                      {{posts.item.petFamily}}
+                    </template>
+
                     <template v-slot:cell(actions)="data">
                         <b-button ><i class="fa fa-eye" aria-hidden="true" title="View" style="color: DodgerBlue;;cursor: pointer;"></i></b-button>&nbsp;&nbsp;
-                        <b-button ><i class="fa fa-pencil-square-o" aria-hidden="true" title="Edit" style="color: Orange;cursor: pointer;"></i></b-button>&nbsp;&nbsp;
+                        <router-link to="/Pets/Edit" tag="button" ><i class="fa fa-pencil-square-o" aria-hidden="true" title="Edit" style="color: Orange;cursor: pointer;"></i></router-link>&nbsp;&nbsp;
                         <b-button variant="danger" @click="deleteItem(data.item.id)"><i class="fa fa-trash" aria-hidden="true" title="Remove" style="color: red;cursor: pointer;"></i></b-button>&nbsp;&nbsp;
                     </template>
                     </b-table>
@@ -55,6 +72,9 @@
 </template>
 
 <script>
+
+// import petsAdd from './addPets.vue';
+
 export default {
   name: "App",
   data() {
@@ -62,6 +82,12 @@ export default {
     //   filter: "",
       isBusy: false,
       fields: [
+          {
+            key: 'petProfile',
+            label: 'Pet Profile',
+            //   sortable: true,
+            //   sortDirection: 'desc'
+          },
           {
             key: 'petName',
             label: 'Pet Name',
@@ -101,7 +127,7 @@ export default {
             petFamily:'Longhair',
         },
         {
-            petProfile: 'https://upload.wikimedia.org/wikipedia/commons/5/5a/Mama%C3%AFta_%28landscape_format%29.jpg',
+            petProfile: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfy3tgvULWkIca2FA8Pcod2894lYvxqTwqQ&usqp=CAU',
             petName: 'Luna',
             petType:'Cow',
             petFamily:'Cattle (Albera)',
