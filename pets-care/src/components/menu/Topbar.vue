@@ -22,7 +22,7 @@
 			<a href="#" class="nav-item nav-link"><i class="fa fa-users"></i><span>Team</span></a> -->
 			<!-- <a href="#" class="nav-item nav-link"><i class="fa fa-pie-chart"></i><span>Reports</span></a> -->
 			<a href="#" class="nav-item nav-link"><i class="fa fa-star"></i><span>FeedBack</span></a>
-			<a href="#" class="nav-item nav-link"><i class="fa fa-envelope"></i><span>Messages</span></a>		
+			<a href="/Messages/chatBot" class="nav-item nav-link"><i class="fa fa-envelope"></i><span>Messages</span></a>		
 			<a href="#" class="nav-item nav-link"><i class="fa fa-bell"></i><span>Notifications</span></a>
 				
 			<div class="nav-item dropdown">

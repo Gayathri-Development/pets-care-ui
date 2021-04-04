@@ -6,9 +6,15 @@
 2. https://vuetifyjs.com/en/components/bottom-navigation/#hide-on-scroll
 3. https://getbootstrap.com/docs/4.0/components/alerts/
 
+# vue-dataTable
+1. https://medium.com/swlh/vuejs-datatables-the-easy-options-a204600ea53d
+
 # vue-coponents:button
 1. https://bootstrap-vue.org/docs/components/button
 
 # vue-modal
 1. https://vuejsexamples.com/a-modal-window-component-for-vue/
 2. https://vuetifyjs.com/en/components/dialogs/#form
+
+# vue-Alerts
+1. https://vuetifyjs.com/en/components/alerts/#outlined
