@@ -8,7 +8,7 @@
       <router-link to="/Users" active-class="active" tag="button" exact class="side-btn">
         <div class="link-container">Pets Owners</div>
       </router-link>
-      <router-link to="/User/Create" active-class="active" tag="button" exact class="side-btn">
+      <router-link to="/doctors" active-class="active" tag="button" exact class="side-btn">
         <div class="link-container">Pets Health Care</div>
       </router-link>
       <router-link to="/User/Edit" active-class="active" tag="button" exact class="side-btn">

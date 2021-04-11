@@ -58,6 +58,8 @@ export default {
           }
         })
         .catch(() => (this.apiError = true));
+
+        // console.log("test")
     }
     //call api ends
 

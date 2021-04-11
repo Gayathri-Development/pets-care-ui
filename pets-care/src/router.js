@@ -15,6 +15,8 @@ import petsAdd from './components/pets/addPets.vue';
 import petsList from './components/pets/pets.vue';
 import petsUpdate from './components/pets/petsUpdate.vue';
 import chatBot from './components/Message/messages.vue';
+import salesList from './components/sales/sales.vue';
+import doctorsList from './components/Doctor/Doctors.vue';
 
 export default new VueRouter({ 
   routes: [
@@ -27,6 +29,16 @@ export default new VueRouter({
       name: `chatBot`,
       path: `/Messages/chatBot`,
       component: chatBot,
+    },
+    {
+      name: `doctorsList`,
+      path: `/Doctors`,
+      component: doctorsList,
+    },
+    {
+      name: `salesList`,
+      path: `/sales`,
+      component: salesList,
     },
     {
       name: `UserCreate`,

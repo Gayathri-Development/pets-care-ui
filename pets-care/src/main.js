@@ -24,6 +24,24 @@ import 'vue-form-wizard/dist/vue-form-wizard.min.css'
 Vue.use(VueFormWizard)
 // Vue step wizard ends
 
+// Vue dropdown starts
+import dropdown from 'vue-dropdowns';
+Vue.component('dropdown', dropdown);
+
+import VueDropdown from 'vue-dynamic-dropdown'
+Vue.component('vue-dropdown', VueDropdown);
+
+import vSelect from "vue-select";
+Vue.component("v-select", vSelect);
+import "vue-select/dist/vue-select.css";
+// Vue dropdown ends
+
+// Vue GridView starts
+import Grid from "vue-js-grid";
+Vue.use(Grid);
+// Vue.config.productionTip = false;
+// Vue GridView ends
+
 import router from './router.js';
 import App from './App.vue'
 

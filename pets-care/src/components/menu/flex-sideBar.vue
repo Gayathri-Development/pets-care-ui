@@ -17,7 +17,7 @@
         <router-link to="/Pets" active-class="active" tag="button" exact class="side-btn">
           <div class="link-container" style="font-size: 3rem;"><i class="fa fa-paw" aria-hidden="true"></i></div>
         </router-link>
-        <router-link to="/User/Create" active-class="active" tag="button" exact class="side-btn">
+        <router-link to="/Doctors" active-class="active" tag="button" exact class="side-btn">
           <div class="link-container" style="font-size: 3rem;"><i class="fa fa-user-md"></i></div>
         </router-link>
         <router-link to="/User/Edit" active-class="active" tag="button" exact class="side-btn">

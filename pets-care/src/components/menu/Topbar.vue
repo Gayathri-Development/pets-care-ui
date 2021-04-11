@@ -21,11 +21,12 @@
 			<a href="#" class="nav-item nav-link"><i class="fa fa-briefcase"></i><span>Careers</span></a>
 			<a href="#" class="nav-item nav-link"><i class="fa fa-users"></i><span>Team</span></a> -->
 			<!-- <a href="#" class="nav-item nav-link"><i class="fa fa-pie-chart"></i><span>Reports</span></a> -->
-			<a href="#" class="nav-item nav-link"><i class="fa fa-star"></i><span>FeedBack</span></a>
+			<a href="/sales" class="nav-item nav-link"><i class="fa fa-star"></i><span>FeedBack</span></a>
 			<a href="/Messages/chatBot" class="nav-item nav-link"><i class="fa fa-envelope"></i><span>Messages</span></a>		
 			<a href="#" class="nav-item nav-link"><i class="fa fa-bell"></i><span>Notifications</span></a>
+			<a href="/Pets/Profiles" ><img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12213218/German-Shepherd-on-White-00.jpg" class="avatar" alt="Avatar"></a>
 				
-			<div class="nav-item dropdown">
+			<!-- <div class="nav-item dropdown">
 				<a href="/Pets/Profiles" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12213218/German-Shepherd-on-White-00.jpg" class="avatar" alt="Avatar"><b class="caret"></b></a>
 				<div class="dropdown-menu">
 					<a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a>
@@ -34,7 +35,7 @@
 					<div class="divider dropdown-divider"></div>
 					<a href="#" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </nav>
